@@ -2,4 +2,13 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  h3 Recent Messages
+  ul
+    each message in messages
+      li(style="margin-bottom: 12px;")
+        |
+        b #{message.user}
+        | : "#{message.text}" 
+        br
+        | 
+        .message-date(style="font-size: 12px; color: #808080;") At #{message.added}
