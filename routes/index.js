@@ -24,7 +24,7 @@ router.get('/new', function(req, res, next) {
 });
 
 router.post('/new', function(req, res, next) {
-  messages.push({ text: req.body.messageText, user: req.body.messageUser, date: new Date() });
+  messages.push({ text: req.body.messageText, user: req.body.messageUser, added: new Date() });
   res.redirect('/');
 });
 
