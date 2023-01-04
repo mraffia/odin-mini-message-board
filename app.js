@@ -7,7 +7,13 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+const compression = require("compression");
+const helmet = require("helmet");
+
 var app = express();
+
+app.use(compression());
+app.use(helmet());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
