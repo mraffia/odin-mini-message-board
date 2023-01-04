@@ -7,11 +7,11 @@ block content
       | Name: 
       br
       |
-      input(type='text', name='name', value='', placeholder='John Doe', style="margin-bottom: 12px;")
+      input(required='true', type='text', name='messageUser', placeholder='John Doe', style="margin-bottom: 12px;")
       |
       br
       | Message:
       br
       | 
-      textarea(name='message', value='', placeholder='Hello World', rows="10" cols="30")
+      textarea(required='true', name='messageText', placeholder='Hello World', rows="10" cols="30")
     input(type='submit', value='Submit')
