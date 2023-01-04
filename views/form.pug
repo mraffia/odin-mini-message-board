@@ -2,15 +2,18 @@ extends layout
 
 block content
   h1= title
+  a(href='/') Back to home
   form(action='/new', method='POST')
     p
-      | Name: 
+      |
+      b Name: 
       br
       |
       input(required='true', type='text', name='messageUser', placeholder='John Doe', style="margin-bottom: 12px;")
       |
       br
-      | Message:
+      | 
+      b Message:
       br
       | 
       textarea(required='true', name='messageText', placeholder='Hello World', rows="10" cols="30")

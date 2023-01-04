@@ -8,8 +8,8 @@ block content
     each message in messages
       li(style="margin-bottom: 12px;")
         |
-        b #{message.user}
-        | : "#{message.text}" 
+        b #{message.user}: 
+        | "#{message.text}" 
         br
         | 
         .message-date(style="font-size: 12px; color: #808080;") At #{message.added}
