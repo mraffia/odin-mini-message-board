@@ -1,4 +1,4 @@
-# odin-basic-informational-site
+# odin-mini-message-board
 Mini Message Board project from NodeJS section of the Full Stack Javascript Course on The Odin Project
 
 ### Project Website
